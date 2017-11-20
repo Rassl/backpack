@@ -131,7 +131,11 @@ body{
 .section-models__view {
     width: 200px;
     height: 200px;
+    margin-top: 250px;
     margin: 0 auto;
     border-radius: 50%;
     background: url(./backpack-background.png);
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: 57%;
 }
