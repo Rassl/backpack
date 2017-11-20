@@ -19,4 +19,20 @@ document.addEventListener('DOMContentLoaded', function(){
 
         topLayer.style.width= e.clientX + skew + delta + 'px';
     });
+
+
 });
+
+$(document).ready(function(){
+    $('.views__button').on('click', function(e) {
+        var imageId = $(this).attr('id');
+
+        $(this).addClass('views__button_active')
+            .siblings().removeClass('views__button_active');
+
+        console.log(imageId);
+        $('.'+ imageId).show('slow')
+            .siblings().hide('slow');
+        debugger;
+    })
+})
