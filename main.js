@@ -30,9 +30,9 @@ $(document).ready(function(){
         $(this).addClass('views__button_active')
             .siblings().removeClass('views__button_active');
 
-        console.log(imageId);
-        $('.'+ imageId).show('slow')
-            .siblings().hide('slow');
-        debugger;
+        // $('.'+ imageId).show('slow')
+        //     .siblings().hide('slow');
+        $('.'+ imageId).addClass('views__image_display')
+            .siblings().removeClass('views__image_display');
     })
 })
