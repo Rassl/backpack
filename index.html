@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -15,6 +16,11 @@
                 <li class="main-navigation__item"><a href="" class="main-navigation__link">Купить</a></li>
                 <li class="main-navigation__item"><a href="" class="main-navigation__link">Цены</a></li>
                 <li class="main-navigation__item"><a href="" class="main-navigation__link">Цвета</a></li>
+                <li class="main-navigation__item main-navigation__item_basket">
+                    <a href="" class="main-navigation__link">
+                        <img class="main-navigation__img main-navigation__img_basket" src="http://ecr-community.org/wp-content/uploads/2017/09/shopping_cart1600.png" alt="">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -44,8 +50,20 @@
     </section>
     <section class="section-models">
         <!--<h1 class="section__title">Доступные цветовые схемы</h1>-->
+        <div class="model">
+            <img src="https://www.xd-design.com/product/image/medium/p705544_1.jpg" alt="" class="model__img">
+        </div>
+        <div class="model">
+            <img src="https://www.xd-design.com/product/image/medium/p705544_1.jpg" alt="" class="model__img">
+        </div>
         <div class="section-models__view">
 
+        </div>
+        <div class="model">
+            <img src="https://www.xd-design.com/product/image/medium/p705544_1.jpg" alt="" class="model__img">
+        </div>
+        <div class="model">
+            <img src="https://www.xd-design.com/product/image/medium/p705544_1.jpg" alt="" class="model__img">
         </div>
     </section>
     <section class="section-views">
@@ -71,7 +89,22 @@
     <footer class="footer">
 
     </footer>
-        <script src="jquery/jquery.min.js"></script>
-        <script src="main.js"></script>
+    <div class="basket-area">
+        <div class="basket-area_blur"></div>
+        <form id="shopping-form" class="shopping-form" action="">
+            <!--<div class="shopping-form__shipping">-->
+
+            <!--</div>-->
+            <!--<div class="shopping-form__pricing">-->
+
+            <!--</div>-->
+            <input class="shopping-form__input" type="text">
+            <input class="shopping-form__input" type="text">
+            <input class="shopping-form__input" type="text">
+            <input class="shopping-form__input shopping-form__input_button" type="submit">
+        </form>
+    </div>
+    <script src="jquery/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

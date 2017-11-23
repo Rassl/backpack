@@ -35,4 +35,10 @@ $(document).ready(function(){
         $('.'+ imageId).addClass('views__image_display')
             .siblings().removeClass('views__image_display');
     })
+
+    $('.main-navigation__item_basket').on('click', function(e) {
+        e.preventDefault();
+        $('.basket-area').toggleClass('basket-area_display');
+
+    })
 })
