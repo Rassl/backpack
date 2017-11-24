@@ -24,7 +24,24 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 $(document).ready(function(){
-    $('.views__button').on('click', function(e) {
+    $(window).scroll(function() {
+
+        var wScroll = $(this).scrollTop();
+
+        if(wScroll > $('.periscope').offset().top - $(window).height()){
+
+            $('.periscope').css({'background-position':'center '+ (wScroll - $('.periscope').offset().top) +'px'});
+
+            var opacity = (wScroll - $('.periscope').offset().top + 400) / (wScroll / 5);
+
+            $('.periscope__overlay').css({'opacity': opacity});
+
+        }
+    });
+
+
+
+        $('.views__button').on('click', function(e) {
         var imageId = $(this).attr('id');
 
         $(this).addClass('views__button_active')
@@ -36,7 +53,7 @@ $(document).ready(function(){
             .siblings().removeClass('views__image_display');
     })
 
-    $('.main-navigation__item_basket').on('click', function(e) {
+    $('.main-navigation__item_basket, .periscope__button').on('click', function(e) {
         e.preventDefault();
         $('.basket-area').toggleClass('basket-area_display');
 
