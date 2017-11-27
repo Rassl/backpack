@@ -143,9 +143,18 @@ body{
     box-shadow: 0px 10px 44px -6px rgba(0,0,0,0.57);
     overflow: hidden;
 }
+.model:hover {
+    box-shadow: none;
+    overflow: visible;
+}
 .model__img {
     width: 100%;
     height: 100%;
+    transition: all 0.3s linear;
+    transform: rotateZ(0deg) scale(1);
+}
+.model__img:hover {
+    transform: rotateZ(360deg) scale(1.5);
 }
 .periscope {
     overflow: hidden;
@@ -183,6 +192,18 @@ body{
     border-radius: 0;
     font-size: 20px;
     cursor: pointer;
+}
+.periscope__price {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-style: italic;
+}
+.periscope__price span {
+    font-size: 30px;
 }
 .periscope__button:hover {
     /*background: #FDAB00;*/
